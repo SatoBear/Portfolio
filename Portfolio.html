@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niks | Developer Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        html {
+            scroll-padding-top: 70px;
+        }
+
+        .marquee {
+            overflow: hidden;
+        }
+
+        .marquee-track {
+            display: flex;
+            width: max-content;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            animation: scroll 35s linear infinite;
+        }
+
+        .marquee:hover .marquee-track {
+            animation-play-state: paused;
+        }
+
+        .skill {
+            width: 90px;
+            margin-right: 1.5rem;
+            text-align: center;
+        }
+
+        .skill img {
+            width: 64px;
+            height: 64px;
+        }
+
+        @keyframes scroll {
+            to {
+                transform: translateX(-50%);
+            }
+        }
+
+        .carousel-item .card-body {
+            min-height: 200px;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .marquee {
+                overflow-x: auto;
+            }
+
+            .marquee-track {
+                animation: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="home">
+        <nav class="navbar bg-white border-bottom sticky-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#home">Niks</a>
+                <div>
+                    <ul class="navbar-nav flex-row flex-wrap gap-3">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#goals">Goals</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="bg-primary text-white py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <h1 class="display-4 fw-bold">My Developer Portfolio</h1>
+                        <p class="lead mb-0">Hi! I'm Nikko, an aspiring web developer.</p>
+                    </div>
+                    <div class="col-md-4 text-md-end mt-4 mt-md-0">
+                        <img src="pfImage.jpg" alt="Profile photo of Nikko" width="170" height="170"
+                            class="rounded-circle border border-4 border-white object-fit-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="about" class="py-5">
+            <div class="container">
+                <h2 class="fw-bold mb-4">About Me</h2>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <p>I'm Nikko Aldren, but most people call me Niks. I'm a second-year BSIT student at National
+                            University Fairview who loves turning ideas into working websites and software.</p>
+                        <p>I studied the TVL ICT strand in Grade 11 and Grade 12, which is where I learned programming,
+                            computer systems, and web design.</p>
+                        <p class="mb-0">Today I learn by building real projects, and I try to make each one better than
+                            the last.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="fw-bold mb-4">My Technical Skills</h2>
+            </div>
+            <div class="marquee">
+                <ul class="marquee-track">
+                    <li class="skill">
+                        <img src="https://skillicons.dev/icons?i=html" alt="HTML logo">
+                        <p class="small fw-bold mt-2 mb-0">HTML</p>
+                    </li>
+                    <li class="skill">
+                        <img src="https://skillicons.dev/icons?i=css" alt="CSS logo">
+                        <p class="small fw-bold mt-2 mb-0">CSS</p>
+                    </li>
+                    <li class="skill">
+                        <img src="https://skillicons.dev/icons?i=js" alt="JavaScript logo">
+                        <p class="small fw-bold mt-2 mb-0">JavaScript</p>
+                    </li>
+                    <li class="skill">
+                        <img src="https://skillicons.dev/icons?i=react" alt="React.js logo">
+                        <p class="small fw-bold mt-2 mb-0">React.js</p>
+                    </li>
+                    <li class="skill">
+                        <img src="https://skillicons.dev/icons?i=tailwind" alt="Tailwind CSS logo">
+                        <p class="small fw-bold mt-2 mb-0">Tailwind CSS</p>
+                    </li>
+                    <li class="skill">
+                        <img src="https://skillicons.dev/icons?i=bootstrap" alt="Bootstrap logo">
+                        <p class="small fw-bold mt-2 mb-0">Bootstrap</p>
+                    </li>
+                    <li class="skill">
+                        <img src="https://skillicons.dev/icons?i=figma" alt="Figma logo">
+                        <p class="small fw-bold mt-2 mb-0">Figma</p>
+                    </li>
+                    <li class="skill">
+                        <img src="https://skillicons.dev/icons?i=php" alt="PHP logo">
+                        <p class="small fw-bold mt-2 mb-0">PHP</p>
+                    </li>
+                    <li class="skill">
+                        <img src="https://skillicons.dev/icons?i=laravel" alt="Laravel logo">
+                        <p class="small fw-bold mt-2 mb-0">Laravel</p>
+                    </li>
+                    <li class="skill">
+                        <img src="https://skillicons.dev/icons?i=python" alt="Python logo">
+                        <p class="small fw-bold mt-2 mb-0">Python</p>
+                    </li>
+                    <li class="skill">
+                        <img src="https://skillicons.dev/icons?i=flask" alt="Flask logo">
+                        <p class="small fw-bold mt-2 mb-0">Flask</p>
+                    </li>
+                    <li class="skill">
+                        <img src="https://skillicons.dev/icons?i=java" alt="Java logo">
+                        <p class="small fw-bold mt-2 mb-0">Java</p>
+                    </li>
+                    <li class="skill">
+                        <img src="https://skillicons.dev/icons?i=mysql" alt="MySQL logo">
+                        <p class="small fw-bold mt-2 mb-0">MySQL</p>
+                    </li>
+                    <li class="skill">
+                        <img src="https://skillicons.dev/icons?i=git" alt="Git logo">
+                        <p class="small fw-bold mt-2 mb-0">Git</p>
+                    </li>
+                    <li class="skill" aria-hidden="true">
+                        <img src="https://skillicons.dev/icons?i=html" alt="HTML logo">
+                        <p class="small fw-bold mt-2 mb-0">HTML</p>
+                    </li>
+                    <li class="skill" aria-hidden="true">
+                        <img src="https://skillicons.dev/icons?i=css" alt="CSS logo">
+                        <p class="small fw-bold mt-2 mb-0">CSS</p>
+                    </li>
+                    <li class="skill" aria-hidden="true">
+                        <img src="https://skillicons.dev/icons?i=js" alt="JavaScript logo">
+                        <p class="small fw-bold mt-2 mb-0">JavaScript</p>
+                    </li>
+                    <li class="skill" aria-hidden="true">
+                        <img src="https://skillicons.dev/icons?i=react" alt="React.js logo">
+                        <p class="small fw-bold mt-2 mb-0">React.js</p>
+                    </li>
+                    <li class="skill" aria-hidden="true">
+                        <img src="https://skillicons.dev/icons?i=tailwind" alt="Tailwind CSS logo">
+                        <p class="small fw-bold mt-2 mb-0">Tailwind CSS</p>
+                    </li>
+                    <li class="skill" aria-hidden="true">
+                        <img src="https://skillicons.dev/icons?i=bootstrap" alt="Bootstrap logo">
+                        <p class="small fw-bold mt-2 mb-0">Bootstrap</p>
+                    </li>
+                    <li class="skill" aria-hidden="true">
+                        <img src="https://skillicons.dev/icons?i=figma" alt="Figma logo">
+                        <p class="small fw-bold mt-2 mb-0">Figma</p>
+                    </li>
+                    <li class="skill" aria-hidden="true">
+                        <img src="https://skillicons.dev/icons?i=php" alt="PHP logo">
+                        <p class="small fw-bold mt-2 mb-0">PHP</p>
+                    </li>
+                    <li class="skill" aria-hidden="true">
+                        <img src="https://skillicons.dev/icons?i=laravel" alt="Laravel logo">
+                        <p class="small fw-bold mt-2 mb-0">Laravel</p>
+                    </li>
+                    <li class="skill" aria-hidden="true">
+                        <img src="https://skillicons.dev/icons?i=python" alt="Python logo">
+                        <p class="small fw-bold mt-2 mb-0">Python</p>
+                    </li>
+                    <li class="skill" aria-hidden="true">
+                        <img src="https://skillicons.dev/icons?i=flask" alt="Flask logo">
+                        <p class="small fw-bold mt-2 mb-0">Flask</p>
+                    </li>
+                    <li class="skill" aria-hidden="true">
+                        <img src="https://skillicons.dev/icons?i=java" alt="Java logo">
+                        <p class="small fw-bold mt-2 mb-0">Java</p>
+                    </li>
+                    <li class="skill" aria-hidden="true">
+                        <img src="https://skillicons.dev/icons?i=mysql" alt="MySQL logo">
+                        <p class="small fw-bold mt-2 mb-0">MySQL</p>
+                    </li>
+                    <li class="skill" aria-hidden="true">
+                        <img src="https://skillicons.dev/icons?i=git" alt="Git logo">
+                        <p class="small fw-bold mt-2 mb-0">Git</p>
+                    </li>
+                    <li class="skill" aria-hidden="true">
+                        <img src="https://skillicons.dev/icons?i=html" alt="HTML logo">
+                        <p class="small fw-bold mt-2 mb-0">HTML</p>
+                    </li>
+                    <li class="skill" aria-hidden="true">
+                        <img src="https://skillicons.dev/icons?i=css" alt="CSS logo">
+                        <p class="small fw-bold mt-2 mb-0">CSS</p>
+                    </li>
+                    <li class="skill" aria-hidden="true">
+                        <img src="https://skillicons.dev/icons?i=js" alt="JavaScript logo">
+                        <p class="small fw-bold mt-2 mb-0">JavaScript</p>
+                    </li>
+                    <li class="skill" aria-hidden="true">
+                        <img src="https://skillicons.dev/icons?i=react" alt="React.js logo">
+                        <p class="small fw-bold mt-2 mb-0">React.js</p>
+                    </li>
+                    <li class="skill" aria-hidden="true">
+                        <img src="https://skillicons.dev/icons?i=tailwind" alt="Tailwind CSS logo">
+                        <p class="small fw-bold mt-2 mb-0">Tailwind CSS</p>
+                    </li>
+                    <li class="skill" aria-hidden="true">
+                        <img src="https://skillicons.dev/icons?i=bootstrap" alt="Bootstrap logo">
+                        <p class="small fw-bold mt-2 mb-0">Bootstrap</p>
+                    </li>
+                    <li class="skill" aria-hidden="true">
+                        <img src="https://skillicons.dev/icons?i=figma" alt="Figma logo">
+                        <p class="small fw-bold mt-2 mb-0">Figma</p>
+                    </li>
+                    <li class="skill" aria-hidden="true">
+                        <img src="https://skillicons.dev/icons?i=php" alt="PHP logo">
+                        <p class="small fw-bold mt-2 mb-0">PHP</p>
+                    </li>
+                    <li class="skill" aria-hidden="true">
+                        <img src="https://skillicons.dev/icons?i=laravel" alt="Laravel logo">
+                        <p class="small fw-bold mt-2 mb-0">Laravel</p>
+                    </li>
+                    <li class="skill" aria-hidden="true">
+                        <img src="https://skillicons.dev/icons?i=python" alt="Python logo">
+                        <p class="small fw-bold mt-2 mb-0">Python</p>
+                    </li>
+                    <li class="skill" aria-hidden="true">
+                        <img src="https://skillicons.dev/icons?i=flask" alt="Flask logo">
+                        <p class="small fw-bold mt-2 mb-0">Flask</p>
+                    </li>
+                    <li class="skill" aria-hidden="true">
+                        <img src="https://skillicons.dev/icons?i=java" alt="Java logo">
+                        <p class="small fw-bold mt-2 mb-0">Java</p>
+                    </li>
+                    <li class="skill" aria-hidden="true">
+                        <img src="https://skillicons.dev/icons?i=mysql" alt="MySQL logo">
+                        <p class="small fw-bold mt-2 mb-0">MySQL</p>
+                    </li>
+                    <li class="skill" aria-hidden="true">
+                        <img src="https://skillicons.dev/icons?i=git" alt="Git logo">
+                        <p class="small fw-bold mt-2 mb-0">Git</p>
+                    </li>
+                    <li class="skill" aria-hidden="true">
+                        <img src="https://skillicons.dev/icons?i=html" alt="HTML logo">
+                        <p class="small fw-bold mt-2 mb-0">HTML</p>
+                    </li>
+                    <li class="skill" aria-hidden="true">
+                        <img src="https://skillicons.dev/icons?i=css" alt="CSS logo">
+                        <p class="small fw-bold mt-2 mb-0">CSS</p>
+                    </li>
+                    <li class="skill" aria-hidden="true">
+                        <img src="https://skillicons.dev/icons?i=js" alt="JavaScript logo">
+                        <p class="small fw-bold mt-2 mb-0">JavaScript</p>
+                    </li>
+                    <li class="skill" aria-hidden="true">
+                        <img src="https://skillicons.dev/icons?i=react" alt="React.js logo">
+                        <p class="small fw-bold mt-2 mb-0">React.js</p>
+                    </li>
+                    <li class="skill" aria-hidden="true">
+                        <img src="https://skillicons.dev/icons?i=tailwind" alt="Tailwind CSS logo">
+                        <p class="small fw-bold mt-2 mb-0">Tailwind CSS</p>
+                    </li>
+                    <li class="skill" aria-hidden="true">
+                        <img src="https://skillicons.dev/icons?i=bootstrap" alt="Bootstrap logo">
+                        <p class="small fw-bold mt-2 mb-0">Bootstrap</p>
+                    </li>
+                    <li class="skill" aria-hidden="true">
+                        <img src="https://skillicons.dev/icons?i=figma" alt="Figma logo">
+                        <p class="small fw-bold mt-2 mb-0">Figma</p>
+                    </li>
+                    <li class="skill" aria-hidden="true">
+                        <img src="https://skillicons.dev/icons?i=php" alt="PHP logo">
+                        <p class="small fw-bold mt-2 mb-0">PHP</p>
+                    </li>
+                    <li class="skill" aria-hidden="true">
+                        <img src="https://skillicons.dev/icons?i=laravel" alt="Laravel logo">
+                        <p class="small fw-bold mt-2 mb-0">Laravel</p>
+                    </li>
+                    <li class="skill" aria-hidden="true">
+                        <img src="https://skillicons.dev/icons?i=python" alt="Python logo">
+                        <p class="small fw-bold mt-2 mb-0">Python</p>
+                    </li>
+                    <li class="skill" aria-hidden="true">
+                        <img src="https://skillicons.dev/icons?i=flask" alt="Flask logo">
+                        <p class="small fw-bold mt-2 mb-0">Flask</p>
+                    </li>
+                    <li class="skill" aria-hidden="true">
+                        <img src="https://skillicons.dev/icons?i=java" alt="Java logo">
+                        <p class="small fw-bold mt-2 mb-0">Java</p>
+                    </li>
+                    <li class="skill" aria-hidden="true">
+                        <img src="https://skillicons.dev/icons?i=mysql" alt="MySQL logo">
+                        <p class="small fw-bold mt-2 mb-0">MySQL</p>
+                    </li>
+                    <li class="skill" aria-hidden="true">
+                        <img src="https://skillicons.dev/icons?i=git" alt="Git logo">
+                        <p class="small fw-bold mt-2 mb-0">Git</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="education" class="py-5">
+            <div class="container">
+                <h2 class="fw-bold mb-4">Educational Background</h2>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <tr class="table-primary">
+                            <th>Category</th>
+                            <th>Details</th>
+                        </tr>
+                        <tr>
+                            <td>College</td>
+                            <td>National University Fairview</td>
+                        </tr>
+                        <tr>
+                            <td>Program</td>
+                            <td>Bachelor of Science in Information Technology (BSIT)</td>
+                        </tr>
+                        <tr>
+                            <td>Year Level</td>
+                            <td>2nd Year</td>
+                        </tr>
+                        <tr>
+                            <td>Senior High School</td>
+                            <td>Lagro High School - TVL ICT, Grade 11 and Grade 12 (SY: 2024-2025)</td>
+                        </tr>
+                        <tr>
+                            <td>Elementary</td>
+                            <td>Lagro Elementary School (SY: 2018-2019)</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="fw-bold mb-4">My Projects</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div id="projectCarousel" class="carousel carousel-dark slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="px-5">
+                                        <article class="card shadow-sm">
+                                            <div class="card-body">
+                                                <h3 class="card-title h5">Project World Roleplay Website</h3>
+                                                <p class="card-text">A modern website for a SA:MP roleplay server that
+                                                    presents its community and features.</p>
+                                                <div class="mb-3">
+                                                    <span class="badge text-bg-secondary">HTML</span>
+                                                    <span class="badge text-bg-secondary">CSS</span>
+                                                    <span class="badge text-bg-secondary">JavaScript</span>
+                                                </div>
+                                                <a href="https://github.com/SatoBear/Project-World-Roleplay-Website"
+                                                    target="_blank" rel="noopener">View on GitHub</a>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="px-5">
+                                        <article class="card shadow-sm">
+                                            <div class="card-body">
+                                                <h3 class="card-title h5">Warehouse Inventory Management System</h3>
+                                                <p class="card-text">A Python system that runs in the terminal and
+                                                    tracks warehouse stock without a frontend.</p>
+                                                <div class="mb-3">
+                                                    <span class="badge text-bg-secondary">Python</span>
+                                                </div>
+                                                <a href="https://github.com/SatoBear/Warehouse-Inventory-Management-System"
+                                                    target="_blank" rel="noopener">View on GitHub</a>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="px-5">
+                                        <article class="card shadow-sm">
+                                            <div class="card-body">
+                                                <h3 class="card-title h5">JavaLuxe Hotel Booking System</h3>
+                                                <p class="card-text">A hotel booking system where guests can book rooms
+                                                    and see availability in real time.</p>
+                                                <div class="mb-3">
+                                                    <span class="badge text-bg-secondary">Java</span>
+                                                </div>
+                                                <a href="https://github.com/SatoBear/JavaLuxe" target="_blank"
+                                                    rel="noopener">View on GitHub</a>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="px-5">
+                                        <article class="card shadow-sm">
+                                            <div class="card-body">
+                                                <h3 class="card-title h5">Kinetiq</h3>
+                                                <p class="card-text">A front-end experiment where I practice layout,
+                                                    structure, and interface ideas.</p>
+                                                <div class="mb-3">
+                                                    <span class="badge text-bg-secondary">HTML</span>
+                                                    <span class="badge text-bg-secondary">CSS</span>
+                                                </div>
+                                                <a href="https://github.com/SatoBear/Kinetiq" target="_blank"
+                                                    rel="noopener">View on GitHub</a>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-indicators position-relative mt-3 mb-0">
+                                <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Project 1"></button>
+                                <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="1"
+                                    aria-label="Project 2"></button>
+                                <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="2"
+                                    aria-label="Project 3"></button>
+                                <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="3"
+                                    aria-label="Project 4"></button>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="goals" class="py-5">
+            <div class="container">
+                <h2 class="fw-bold mb-4">My Career Goals</h2>
+                <ol class="list-group list-group-numbered">
+                    <li class="list-group-item">Finish my BSIT degree with solid skills in web and software development.
+                    </li>
+                    <li class="list-group-item">Master a full stack with React, Laravel, and MySQL by building complete
+                        systems.</li>
+                    <li class="list-group-item">Work as a professional developer and keep learning through real-world
+                        projects.</li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="contact" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="fw-bold mb-4">Contact Me</h2>
+                <div class="row g-4">
+                    <div class="col-md-5">
+                        <p>Email:
+                            <a href="mailto:yourname@example.com">Contact via Email</a>
+                        </p>
+                        <p>GitHub:
+                            <a href="https://github.com/SatoBear" target="_blank" rel="noopener">SatoBear</a>
+                        </p>
+                        <p>Facebook:
+                            <a href="https://web.facebook.com/nikkoaldren.sumagang" target="_blank" rel="noopener">Nikko
+                                Aldren</a>
+                        </p>
+                    </div>
+                    <div class="col-md-7">
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name:</label>
+                                <input type="text" class="form-control" id="name" name="name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message:</label>
+                                <textarea class="form-control" id="message" name="message" rows="4"></textarea>
+                            </div>
+                            <button type="button" class="btn btn-primary">Send Message</button>
+                        </form>
+                        <p class="text-secondary small mt-2">Note: This form is a visual prototype only.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">&copy; 2026 Nikko Aldren (Niks). All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
